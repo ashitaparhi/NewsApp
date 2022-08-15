@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/news_category_margin"
+    android:layout_marginEnd="@dimen/news_category_margin">
+
+    <TextView
+        android:id="@+id/tvCategoryItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/category_item_unselected_bg"
+        android:padding="@dimen/news_category_padding"
+        android:textStyle="bold"
+        android:textColor="@color/black_alpha_70"
+        tools:text="Business" />
+
+</FrameLayout>

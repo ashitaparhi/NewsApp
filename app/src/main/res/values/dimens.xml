@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="news_row_item_margin">8dp</dimen>
+    <dimen name="news_image_margin_end">10dp</dimen>
+    <dimen name="news_category_padding">10dp</dimen>
+    <dimen name="news_category_margin">5dp</dimen>
+    <dimen name="news_content_text_size">13sp</dimen>
+    <dimen name="news_title_text_size">15sp</dimen>
+    <dimen name="news_image_width">100dp</dimen>
+</resources>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/llNewsArticleRoot"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/news_row_item_margin"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/newsImage"
+        android:layout_width="@dimen/news_image_width"
+        android:layout_height="@dimen/news_image_width"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:background="@drawable/ic_launcher_foreground" />
+
+    <TextView
+        android:id="@+id/newsTitle"
+        style="@style/NewsItemTextStyle"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:textColor="@color/black"
+        android:textSize="@dimen/news_title_text_size"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/newsImage"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Fighting for Web 3.0: Digital wallet wars are the new browser wars - Cointelegraph" />
+
+    <TextView
+        android:id="@+id/newsShortDesc"
+        style="@style/NewsItemTextStyle"
+        android:ellipsize="end"
+        android:maxLines="2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/newsImage"
+        app:layout_constraintTop_toBottomOf="@id/newsTitle"
+        tools:text="History is rhyming: How the new war for the future of wallets and Web 3.0 interfaces might parallel the browser wars of the early internet." />
+
+    <TextView
+        android:id="@+id/newsChannelName"
+        style="@style/NewsItemTextStyle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/newsImage"
+        app:layout_constraintTop_toBottomOf="@id/newsShortDesc"
+        tools:text="Cointelegraph" />
+
+    <TextView
+        android:id="@+id/newsDate"
+        style="@style/NewsItemTextStyle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/newsImage"
+        app:layout_constraintTop_toBottomOf="@id/newsChannelName"
+        tools:text="date" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
